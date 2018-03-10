@@ -10,7 +10,7 @@
 @pi-img-max-size: 200px;
 
 @import "/css/bootstrap/bootstrap.less";
-@navbar-height: 75px;
+@navbar-height: 40px;
 @navbar-margin-bottom: 0px;
 @line-height-base: 1.6;
 @content-padding: 20px;
@@ -54,6 +54,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 
 // General Spacing and Color Stuff //
 
+
 .container {
     max-width: @global-max-width;
 }
@@ -95,6 +96,18 @@ p + h2, p + h3, p + h4, p + h5, p + h6 {
 .text-center {
     text-align: center;
 }
+
+.center-vertical{
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+} 
+
+.buttom-vertical{
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+} 
 
 .hugespacer {
     height: 50px;
@@ -157,7 +170,22 @@ photo-text {
 
 // Header and Footer Stuff //
 
+.jumbotron {
+    background-image: url(/images/header.jpg);
+    background-size: cover;
+    height: 150px; 
+    padding: 0;
+    margin: 0;
+}
 .navbar {
+    border-radius: 0px;
+    background-color: rgba(255,255,255,0.7);
+    //background: transparent;
+    border-color: transparent;
+    //background-image: url(/images/nav.jpg);
+}
+
+.headbar {
     border-radius: 0px;
     //background-image: url(/images/nav.jpg);
 }
