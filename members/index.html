@@ -1,0 +1,91 @@
+---
+layout: default
+title: 刘晓庆课题组-成员
+categories:
+ - members
+---
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>课题组负责人</h1>
+  </div>
+</div>
+
+<hr>
+
+{% for member in site.categories.members reversed %}
+  {% if member.position == "课题组负责人" %}
+<div class="row">
+  <div class="col-sm-3">
+    <a href="{{ member.url }}">
+      <img class="pi-img" src="{{ member.image }}">
+    </a>
+    <div class="spacer"></div>
+    <div class="hidden-xs">
+      {% include member_links.html member_loc=member %}
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <a class="off" href="{{ member.url }}">
+      <h2>{{ member.title }}</h2>
+    </a>
+    <div class="bigspacer"></div>
+    {{ member.content }}
+  </div>
+</div>
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<div class="bigspacer"></div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>博士后</h1>
+  </div>
+</div>
+
+<hr>
+
+{% include member_loop.html member_role="博士后" alumni=false %}
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>博士研究生</h1>
+  </div>
+</div>
+
+<hr>
+
+{% include member_loop.html member_role="博士研究生" alumni=false %}
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>硕士研究生</h1>
+  </div>
+</div>
+
+<hr>
+
+
+{% include member_loop.html member_role="硕士研究生" alumni=false %}
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>本科生</h1>
+  </div>
+</div>
+
+<hr>
+
+{% include member_loop.html member_role="本科生" alumni=false %}
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>Alumni</h1>
+  </div>
+</div>
+
+<hr>
+
+{% include member_loop.html alumni=true%}

@@ -1,0 +1,12 @@
+name: Xiaoqing Liu's Group
+description: none
+url: localhost:4000
+markdown: kramdown
+permalink: /:categories/:title/
+future: true
+
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "deploy.sh"
+  - "ghp_deploy.sh"

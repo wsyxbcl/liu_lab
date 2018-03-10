@@ -1,0 +1,45 @@
+---
+layout: default
+title: 刘晓庆课题组-新闻
+categories:
+ - news
+---
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>新闻</h1>
+  </div>
+</div>
+
+<hr>
+
+<div class="post-list">
+
+{% for post in site.categories.news limit: 8 %}
+
+  <div class="blog-post">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="media">
+          <div class="media-body">
+            <div class="h1 media-heading">
+              <a href="{{ post.url }}" class="off text pull-left">
+                <h3>{{ post.title }}</h3>
+              </a>
+              <h3 class="text pull-right">{{ post.date | date: "%Y-%m-%d" }}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+
+  </div>
+
+{% endfor %}
+
+</div>

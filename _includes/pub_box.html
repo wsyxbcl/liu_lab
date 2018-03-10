@@ -1,0 +1,18 @@
+<div class="col-md-12 paperbox">
+  <div class="media">
+    <div class="media-body">
+      <div class="media-heading">
+        <a class="off" href="http://dx.doi.org/{{ publication.doi }}">
+          <h3>{{ publication.title }}</h3>
+        </a>
+      </div>
+      <p class="smallnote">
+        <h3><small>{% include pub_ref.html pub_loc=include.pub short=true %}</small></h3>
+      </p>
+    </div>
+    {% if include.pub.image %}
+    <img width=75% class="img-responsive center-block" src="{{ publication.image }}">
+    {% endif %}
+  </div>
+  <div class="spacer"></div>
+</div>
