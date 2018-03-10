@@ -61,7 +61,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, {
 #content-wrapper {
     background-image: @background-image;
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     background-color: @margin-color;
     .container {
         background-color: @content-background-color;
@@ -137,14 +137,23 @@ img.offset {
      margin-right: auto;
 }
 
-.research-thumbnail {
+.photo-thumbnail {
     height: 200px;
     overflow: hidden;
 }
 
-.research-thumbnail img {
-    max-height: 100%;
+.photo-thumbnail img {
+    min-height: 200px;
+    weidth: 100%;
 }
+
+photo-text {
+    position:absolute;
+    z-index:2;
+    left:10px;
+    top:10px;
+}
+
 
 // Header and Footer Stuff //
 

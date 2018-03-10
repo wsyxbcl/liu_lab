@@ -7,22 +7,35 @@ categories:
 <!-- 
 <div class="row">
   <div class="col-md-12">
-    <h1>Group Photos</h1>
+    <h1>相册</h1>
   </div>
 </div>
 
-<hr> -->
-
+<hr>
+ -->
 {% for photo in site.categories.photos %}
-<div class="row">
-  <div class="col-md-12">
+
+<!--  <div class="col-md-3">
+  	<div class="row">
     <h2>{{ photo.title }}</h2>
     <hr/>
     <img width=100% src="{{ photo.image }}">
-    <p>{{ photo.content }}</p>
+    <p>{{ photo.title }}</p>
+  </div>
+</div> -->
+
+
+ <div class="col-xs-6 col-md-3 photo-thumbnail">
+ 	<div class="row">
+    <a href="{{ photo.image }}" class="off">
+      <img src="{{ photo.image }}" alt="{{ photo.title }}">
+      <div style="position:absolute; z-index:2; left:0px; top:90%">
+        <h4 style="color:white">{{ photo.title }}</h4>
+      </div>
+    </a>
   </div>
 </div>
 
-<div class="spacer"></div>
+
 
 {% endfor %}
