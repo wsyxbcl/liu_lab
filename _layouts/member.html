@@ -8,7 +8,7 @@ layout: default
   <div class="col-sm-12">
     <div class="media">
       {% if member.image %}
-      <img class="pull-left pad-right media-object" width=170 src="{{ member.image }}">
+      <img class="pull-left pad-right media-object" width=170 src="{{ site.baseurl }}{{ member.image }}">
       {% endif %}
       <div class="media-body">
         <h1>{% if member.profile_name %}{{member.profile_name}}{% else %}{{ member.title }}{% endif %}{% if member.suffix %}, {{ member.suffix }}{% endif %}</h1>
