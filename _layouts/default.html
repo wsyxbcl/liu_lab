@@ -7,19 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap core CSS -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
   <!-- Customized Bootstrap + Font Awesome + Solarized -->
-  <link href="/css/style.css" rel="stylesheet" media="screen">
-  <link href="/css/carousel.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" media="screen">
+  <link href="{{ site.baseurl }}/css/carousel.css" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/icon.png">
-  <link rel="icon" type="image/png" href="/favicons/icon.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/favicons/icon.png" sizes="16x16">
-  <link rel="manifest" href="/favicons/manifest.json">
-  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/favicons/icon.png">
-  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicons/icon.png">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicons/icon.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicons/icon.png" sizes="16x16">
+  <link rel="manifest" href="{{ site.baseurl }}/favicons/manifest.json">
+  <link rel="mask-icon" href="{{ site.baseurl }}/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicons/icon.png">
+  <meta name="msapplication-config" content="{{ site.baseurl }}/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
 
@@ -28,15 +28,15 @@
   </script>
 
   <!-- jQuery -->
-  <script src="/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
 
   <!-- Bootstrap -->
-<!--   <script src="/js/transition.js"></script>
-  <script src="/js/collapse.js"></script> -->
+<!--   <script src="{{ site.baseurl }}/js/transition.js"></script>
+  <script src="{{ site.baseurl }}/js/collapse.js"></script> -->
 
   <!-- Custom script to put footer at bottom even if post is short -->
   <!-- also controls color of footer logo on mouseover -->
-  <script src="/js/footer.js"></script>
+  <script src="{{ site.baseurl }}/js/footer.js"></script>
 
 </head>
 
@@ -44,7 +44,7 @@
   <div id="header">
     <div class="jumbotron">
       <div class="container center-vertical"">
-        <a class="navbar-brand off" style="color:white; font-size: 40px" href="/">刘晓庆课题组</a>
+        <a class="navbar-brand off" style="color:white; font-size: 40px" href="{{ site.baseurl }}/">刘晓庆课题组</a>
       </div>     
     </div>
     <nav class="navbar navbar-default" role="navigation">
@@ -65,35 +65,35 @@
             {% else %}
             <li>
             {% endif %}
-              <a href="/research/">研究方向</a>
+              <a href="{{ site.baseurl }}/research/">研究方向</a>
             </li>
             {% if page.categories.first == 'news' %}
             <li class="active">
             {% else %}
             <li>
             {% endif %}
-              <a href="/news/">新闻</a>
+              <a href="{{ site.baseurl }}/news/">新闻</a>
             </li>
             {% if page.categories.first == 'publications' %}
             <li class="active">
             {% else %}
             <li>
             {% endif %}
-              <a href="/publications/">发表文章</a>
+              <a href="{{ site.baseurl }}/publications/">发表文章</a>
             </li>
             {% if page.categories.first == 'members' %}
             <li class="active">
             {% else %}
             <li>
             {% endif %}
-              <a href="/members/">成员</a>
+              <a href="{{ site.baseurl }}/members/">成员</a>
             </li>
             {% if page.categories.first == 'photos' %}
             <li class="active">
             {% else %}
             <li>
             {% endif %}
-              <a href="/photos/">相册</a>
+              <a href="{{ site.baseurl }}/photos/">相册</a>
             </li>
           </ul>
         </div>
@@ -113,13 +113,13 @@
       <div class="container">
         <ul class="nav navbar-nav footernav">
           <li>
-            <a href="/about/">关于我们</a>
+            <a href="{{ site.baseurl }}/about/">关于我们</a>
           </li>
           <li>
-            <a href="/contact/">联系方式</a>
+            <a href="{{ site.baseurl }}/contact/">联系方式</a>
           </li>
           <li>
-            <a href="/join/">加入我们</a>
+            <a href="{{ site.baseurl }}/join/">加入我们</a>
           </li>
         </ul>
       </div>
@@ -133,7 +133,7 @@
         </ul>
         <div id="footer-logo" class="center-block">
           <a href="http://www.chem.whu.edu.cn/">
-            <img id="pennimg" src="/favicons/icon.png">
+            <img id="pennimg" src="{{ site.baseurl }}/favicons/icon.png">
           </a>
         </div>
       </div>
@@ -145,7 +145,7 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+  <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
 </body>
 </html>
