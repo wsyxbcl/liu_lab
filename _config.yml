@@ -1,6 +1,7 @@
 name: Xiaoqing Liu's Group
 description: none
-url: https://github.com/wsyxbcl/liu_lab
+url: localhost:4000
+baseurl: https://github.com/wsyxbcl/liu_lab
 markdown: kramdown
 permalink: /:categories/:title/
 future: true
