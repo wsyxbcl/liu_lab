@@ -8342,7 +8342,7 @@ h6,
   max-width: 950px;
 }
 #content-wrapper {
-  background-image: url(/images/background.jpg);
+  background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #ffffff;
@@ -8532,7 +8532,7 @@ table > tbody > tr:nth-of-type(odd) {
   background-color: #f9f9f9;
 }
 #header {
-  background-image: url(/images/header.jpg);
+  background-image: url(../images/header.jpg);
   background-size: cover;
   padding: 0;
   margin: 0;

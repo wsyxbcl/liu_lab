@@ -17,7 +17,7 @@ categories:
   {% if member.position == "课题组负责人" %}
 <div class="row">
   <div class="col-sm-3">
-    <img class="pi-img" src="{{ member.image }}">
+    <img class="pi-img" src="{{ site.baseurl }}{{ member.image }}">
     <div class="spacer"></div>
     <div class="hidden-xs">
       {% include member_links.html member_loc=member %}
