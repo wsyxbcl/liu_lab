@@ -43,70 +43,68 @@
 <body>
   <div id="header">
     <div class="jumbotron">
-
       <div class="container center-vertical"">
-        <a class="navbar-brand off" style="color:white;" href="/">刘晓庆课题组</a>
+        <a class="navbar-brand off" style="color:white; font-size: 60px" href="/">刘晓庆课题组</a>
+      </div>     
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
 
-      <nav class="navbar navbar-default buttom-vertical" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
-
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+      <div class="container navbar-back">
+        <div class="collapse navbar-collapse" id="navbar-collapse-element">
+          <ul class="nav navbar-nav navbar-right">
+            {% if page.categories.first == 'research' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="/research/">研究方向</a>
+            </li>
+            {% if page.categories.first == 'news' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="/news/">新闻</a>
+            </li>
+            {% if page.categories.first == 'publications' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="/publications/">发表文章</a>
+            </li>
+            {% if page.categories.first == 'members' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="/members/">成员</a>
+            </li>
+            {% if page.categories.first == 'photos' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="/photos/">相册</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="container navbar-back">
-          <div class="collapse navbar-collapse" id="navbar-collapse-element">
-            <ul class="nav navbar-nav navbar-right">
-              {% if page.categories.first == 'research' %}
-              <li class="active">
-              {% else %}
-              <li>
-              {% endif %}
-                <a href="/research/">研究方向</a>
-              </li>
-              {% if page.categories.first == 'news' %}
-              <li class="active">
-              {% else %}
-              <li>
-              {% endif %}
-                <a href="/news/">新闻</a>
-              </li>
-              {% if page.categories.first == 'publications' %}
-              <li class="active">
-              {% else %}
-              <li>
-              {% endif %}
-                <a href="/publications/">发表文章</a>
-              </li>
-              {% if page.categories.first == 'members' %}
-              <li class="active">
-              {% else %}
-              <li>
-              {% endif %}
-                <a href="/members/">成员</a>
-              </li>
-              {% if page.categories.first == 'photos' %}
-              <li class="active">
-              {% else %}
-              <li>
-              {% endif %}
-                <a href="/photos/">相册</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
-    </div>
+      </div>
+    </nav>
   </div>
 
     {{ content }}
 
   <div id="footer">
+    <hr>
     <nav class="navbar navbar-inverse text-center" role="navigation">
       <div class="container">
         <ul class="nav navbar-nav footernav">

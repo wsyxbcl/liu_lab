@@ -10,7 +10,7 @@
 @pi-img-max-size: 200px;
 
 @import "/css/bootstrap/bootstrap.less";
-@navbar-height: 40px;
+@navbar-height: 60px;
 @navbar-margin-bottom: 0px;
 @line-height-base: 1.6;
 @content-padding: 20px;
@@ -98,14 +98,15 @@ p + h2, p + h3, p + h4, p + h5, p + h6 {
 }
 
 .center-vertical{
+    background-color: transparent;
     position: relative;
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
 } 
 
 .buttom-vertical{
     position: relative;
-    top: 60%;
+    top: 55%;
     transform: translateY(-50%);
 } 
 
@@ -171,9 +172,10 @@ photo-text {
 // Header and Footer Stuff //
 
 .jumbotron {
-    background-image: url(/images/header.jpg);
+    //background-image: url(/images/header.jpg);
+    background-color: transparent;
     background-size: cover;
-    height: 150px; 
+    height: 200px; 
     padding: 0;
     margin: 0;
 }
@@ -268,3 +270,9 @@ table {
 //     }
 // }
 
+#header {
+    background-image: url(/images/header.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
