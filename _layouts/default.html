@@ -60,6 +60,10 @@
       <div class="container navbar-back">
         <div class="collapse navbar-collapse" id="navbar-collapse-element">
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="{{ site.baseurl }}/">首页</a>
+            </li>
+
             {% if page.categories.first == 'research' %}
             <li class="active">
             {% else %}
@@ -67,6 +71,7 @@
             {% endif %}
               <a href="{{ site.baseurl }}/research/">研究方向</a>
             </li>
+
             {% if page.categories.first == 'news' %}
             <li class="active">
             {% else %}
@@ -74,6 +79,7 @@
             {% endif %}
               <a href="{{ site.baseurl }}/news/">新闻</a>
             </li>
+
             {% if page.categories.first == 'publications' %}
             <li class="active">
             {% else %}
@@ -81,6 +87,7 @@
             {% endif %}
               <a href="{{ site.baseurl }}/publications/">发表文章</a>
             </li>
+
             {% if page.categories.first == 'members' %}
             <li class="active">
             {% else %}
@@ -88,12 +95,29 @@
             {% endif %}
               <a href="{{ site.baseurl }}/members/">成员</a>
             </li>
+
             {% if page.categories.first == 'photos' %}
             <li class="active">
             {% else %}
             <li>
             {% endif %}
               <a href="{{ site.baseurl }}/photos/">相册</a>
+            </li>
+
+            {% if page.categories.first == 'contact' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="{{ site.baseurl }}/contact/">联系方式</a>
+            </li>
+
+            {% if page.categories.first == 'join' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="{{ site.baseurl }}/join/">加入我们</a>
             </li>
           </ul>
         </div>
