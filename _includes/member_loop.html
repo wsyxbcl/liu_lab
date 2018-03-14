@@ -22,11 +22,16 @@
         <p class="note">{% if member.head-to  %}毕业去向：{{ member.head-to }}{% endif %}</p>
       {% if member.email %}
         {% assign emailarray = member.email | split: ' at ' %}
-        <div class="pad-left note">
-          <div class="smallspacer"></div>
+        <div class="pad-left note"
+         style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
+         unselectable="on"
+         onselectstart="return false;" 
+         onmousedown="return false;">
+          <div class="smallspacer" ></div>
           <i class="fa fa-inbox fa-fw"></i>
           {{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
         </div>
+
         <div class="bigspacer"></div>
       {% endif %}
       </div>
@@ -65,7 +70,11 @@
         <p class="note">{% if member.head-to  %}毕业去向：{{ member.head-to }}{% endif %}</p>
       {% if member.email %}
         {% assign emailarray = member.email | split: ' at ' %}
-        <div class="pad-left note">
+        <div class="pad-left note"
+         style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
+         unselectable="on"
+         onselectstart="return false;" 
+         onmousedown="return false;">
           <div class="smallspacer"></div>
           <i class="fa fa-inbox fa-fw"></i>
           {{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
