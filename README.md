@@ -12,19 +12,25 @@ The framework is highly inspired by [Riggleman Lab](http://rrgroup.seas.upenn.ed
 请参考[Jekyll on Windows](https://jekyllrb.com/docs/windows/)在windows环境下安装ruby, jekyll和bundler。由于libv8无适配windows的版本，推荐使用WSL(Windows Subsystem for Linux)作为环境。  
 1. 安装WSL，可参考[https://www.cnblogs.com/JettTang/p/8186315.html](https://www.cnblogs.com/JettTang/p/8186315.html)
 2. 命令行（或powershell）下执行bash进入WSL
-3. 依次执行
-	sudo apt-get update -y && sudo apt-get upgrade -y  
-	sudo apt-add-repository ppa:brightbox/ruby-ng  
-	sudo apt-get update  
-	sudo apt-get install ruby2.3 ruby2.3-dev build-essential dh-autoreconf  
-	完成对ruby的安装。  
+3. 依次执行  
+'''
+sudo apt-get update -y && sudo apt-get upgrade -y  
+sudo apt-add-repository ppa:brightbox/ruby-ng  
+sudo apt-get update  
+sudo apt-get install ruby2.3 ruby2.3-dev build-essential dh-autoreconf  
+'''
+完成对ruby的安装。  
 4. 执行
-	sudo gem update
-	sudo gem install jekyll bundler
-	完成jekyll和bundle的安装。
+'''
+sudo gem update
+sudo gem install jekyll bundler
+'''
+完成jekyll和bundle的安装。  
 5. 执行（请确保在网站的根目录下，此目录包含Gemfile.lock文件）
-	bundle install  
-	完成环境配置。  
+'''
+bundle install
+''
+完成环境配置。  
 
 
 ## 2. 网站搭建
