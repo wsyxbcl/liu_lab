@@ -13,7 +13,7 @@ The framework is highly inspired by [Riggleman Lab](http://rrgroup.seas.upenn.ed
 1. 安装WSL，可参考[https://www.cnblogs.com/JettTang/p/8186315.html](https://www.cnblogs.com/JettTang/p/8186315.html)
 2. 命令行（或powershell）下执行bash进入WSL
 3. 依次执行  
-'''
+'''shell
 sudo apt-get update -y && sudo apt-get upgrade -y  
 sudo apt-add-repository ppa:brightbox/ruby-ng  
 sudo apt-get update  
@@ -21,13 +21,13 @@ sudo apt-get install ruby2.3 ruby2.3-dev build-essential dh-autoreconf
 '''
 完成对ruby的安装。  
 4. 执行
-'''
+'''shell
 sudo gem update
 sudo gem install jekyll bundler
 '''
 完成jekyll和bundle的安装。  
 5. 执行（请确保在网站的根目录下，此目录包含Gemfile.lock文件）
-'''
+'''shell
 bundle install
 ''
 完成环境配置。  
