@@ -120,6 +120,14 @@
               <a href="{{ site.baseurl }}/join/">加入我们</a>
             </li>
 
+            {% if page.categories.first == 'research' %}
+            <li class="active">
+            {% else %}
+            <li>
+            {% endif %}
+              <a href="{{ site.baseurl }}/links/">网站链接</a>
+            </li>
+
             <li>
               <a href="{{ site.baseurl }}/">ENGLISH</a> <!-- weird command... -->
             </li>
