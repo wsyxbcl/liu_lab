@@ -1,7 +1,7 @@
 name: Xiaoqing Liu's Group
 description: none
-url: http://xiaoqingliu.whu.edu.cn
-baseurl: 
+url: https://wsyxbcl.github.io
+baseurl: /liu_lab
 markdown: kramdown
 permalink: /:categories/:title/
 future: true
@@ -9,4 +9,3 @@ future: true
 exclude:
   - "Gemfile"
   - "Gemfile.lock"
-  - "deploy.sh"
