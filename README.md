@@ -20,17 +20,20 @@ sudo apt-get update
 sudo apt-get install ruby2.3 ruby2.3-dev build-essential dh-autoreconf  
 ```
 完成对ruby的安装。  
+
 4. 执行
 ```shell
 sudo gem update
 sudo gem install jekyll bundler
 ```
 完成jekyll和bundle的安装。  
+
 5. 执行（请确保在网站的根目录下，此目录包含Gemfile.lock文件）
 ```shell
 bundle install
 ```
 完成环境配置。  
+
 
 
 ## 2. 网站搭建
