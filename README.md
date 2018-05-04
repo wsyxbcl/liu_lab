@@ -8,33 +8,10 @@ This README.md is composed in Chinese for it's mainly a tutorial for Chinese use
 The framework is highly inspired by [Riggleman Lab](http://rrgroup.seas.upenn.edu) and [Bedford Lab](http://bedford.io/), thank you for kindly making your code open-source.
 
 ## 1. 环境配置
-环境配置分三步，第一步为ruby的安装，第二步使用gem安装jekyll和bundler，第三步使用bundler安装其他组件。  
-请参考[Jekyll on Windows](https://jekyllrb.com/docs/windows/)在windows环境下安装ruby, jekyll和bundler。由于libv8无适配windows的版本，推荐使用WSL(Windows Subsystem for Linux)作为环境。  
-1. 安装WSL，可参考[https://www.cnblogs.com/JettTang/p/8186315.html](https://www.cnblogs.com/JettTang/p/8186315.html)
-2. 命令行（或powershell）下执行bash进入WSL
-3. 依次执行  
-```shell
-sudo apt-get update -y && sudo apt-get upgrade -y  
-sudo apt-add-repository ppa:brightbox/ruby-ng  
-sudo apt-get update  
-sudo apt-get install ruby2.3 ruby2.3-dev build-essential dh-autoreconf  
-```
-完成对ruby的安装。  
-
-4. 执行
-```shell
-sudo gem update
-sudo gem install jekyll bundler
-```
-完成jekyll和bundle的安装。  
-
-5. 执行（请确保在网站的根目录下，此目录包含Gemfile.lock文件）
-```shell
-bundle install
-```
-完成环境配置。  
-
-
+请参考[Jekyll on Windows](https://jekyllrb.com/docs/windows/)在windows环境下安装ruby。此处仅提供一种方法作为参考。
+1. 使用[RubyInstaller](https://rubyinstaller.org/downloads/)安装Ruby
+2. 命令行（或powershell）执行`gem install jekyll bundler`安装Jekyll和Bundler。
+3. 在命令行中切换到网站根目录（比如`cd C:\xxx\liu_lab`），执行`bundle install`。
 
 ## 2. 网站搭建
 在网站的根目录执行`bundle exec jekyll build`即可完成网站的搭建，生成的静态html文件位于_site文件夹中。使用`bundle exec jekyll serve`可在本地部署网站，在浏览器中输入`http://127.0.0.1:4000/`即可预览生成的网站。

@@ -23,10 +23,6 @@
   <meta name="theme-color" content="#ffffff">
 
 
-  <script type="text/javascript"
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"">
-  </script>
-
   <!-- jQuery -->
   <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
 
@@ -43,7 +39,7 @@
 <body>
   <div id="header">
     <div class="jumbotron">
-      <div class="container center-vertical"">
+      <div class="container center-vertical">
         <a class="navbar-brand off" style="color:white; font-size: 40px" href="{{ site.baseurl }}/">刘晓庆课题组</a>
       </div>     
     </div>
@@ -96,31 +92,35 @@
               <a href="{{ site.baseurl }}/members/">成员</a>
             </li>
 
-            {% if page.categories.first == 'photos' %}
+            {% if page.categories.first == 'photos' or page.categories.first == 'academic' %}
+            <li class="active dropdown">
+            {% else %}
+            <li class="dropdown">
+            {% endif %}
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">相册 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ site.baseurl }}/photos/">业余生活</a></li>
+                <li><a href="{{ site.baseurl }}/academic/">学术生活</a></li>
+              </ul>
+            </li>
+
+            {% if page.categories.first == 'lab' %}
             <li class="active">
             {% else %}
             <li>
             {% endif %}
-              <a href="{{ site.baseurl }}/photos/">相册</a>
+              <a href="{{ site.baseurl }}/lab/">实验平台</a>
             </li>
 
-            {% if page.categories.first == 'contact' %}
+            {% if page.categories.first == 'about' %}
             <li class="active">
             {% else %}
             <li>
             {% endif %}
-              <a href="{{ site.baseurl }}/contact/">联系方式</a>
+              <a href="{{ site.baseurl }}/about/">关于我们</a>
             </li>
 
-            {% if page.categories.first == 'join' %}
-            <li class="active">
-            {% else %}
-            <li>
-            {% endif %}
-              <a href="{{ site.baseurl }}/join/">加入我们</a>
-            </li>
-
-            {% if page.categories.first == 'research' %}
+            {% if page.categories.first == 'links' %}
             <li class="active">
             {% else %}
             <li>
@@ -128,9 +128,7 @@
               <a href="{{ site.baseurl }}/links/">网站链接</a>
             </li>
 
-            <li>
-              <a href="{{ site.baseurl }}/">ENGLISH</a> <!-- weird command... -->
-            </li>
+
           </ul>
         </div>
       </div>
@@ -146,24 +144,12 @@
 
   <div id="footer">
     <nav class="navbar-inverse text-center" role="navigation">
-      <div class="container">
-        <ul class="nav navbar-nav footernav">
-          <li>
-            <a href="{{ site.baseurl }}/about/">关于我们</a>
-          </li>
-          <li>
-            <a href="{{ site.baseurl }}/contact/">联系方式</a>
-          </li>
-          <li>
-            <a href="{{ site.baseurl }}/join/">加入我们</a>
-          </li>
-        </ul>
-      </div>
       <div id="footer-logo-box" class="container">
         <ul class="nav navbar-nav footernav">
           <li>
-            <a id="cbe-text" href="http://www.chem.whu.edu.cn/">
-              武汉大学化学与分子科学学院
+            <br>
+            <a id="cbe-text">
+              化学与分子科学学院 化中213，工学部九教A9422
             </a>
           </li>
         </ul>

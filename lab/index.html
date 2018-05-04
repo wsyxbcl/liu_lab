@@ -1,0 +1,37 @@
+---
+layout: default
+title: 刘晓庆课题组-相册
+categories:
+ - lab
+---
+<!-- 
+<div class="row">
+  <div class="col-md-12">
+    <h1>相册</h1>
+  </div>
+</div>
+
+<hr>
+ -->
+{% for photo in site.categories.lab %}
+
+<!--  <div class="col-md-3">
+  	<div class="row">
+    <h2>{{ photo.title }}</h2>
+    <hr/>
+    <img width=100% src="{{ photo.image }}">
+    <p>{{ photo.title }}</p>
+  </div>
+</div> -->
+
+
+<div class="col-xs-12 col-md-6">
+  <h3>{{ photo.title }}</h3>
+  <a href="{{ site.baseurl }}{{ photo.image }}" class="off">
+    <img src="{{ site.baseurl }}{{ photo.image }}" alt="{{ photo.title }}">
+  </a>
+</div>
+
+
+
+{% endfor %}
