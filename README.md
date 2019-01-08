@@ -11,9 +11,9 @@ The framework is highly inspired by [Riggleman Lab](http://rrgroup.seas.upenn.ed
 ~~请参考[Jekyll on Windows](https://jekyllrb.com/docs/windows/)在windows环境下安装ruby。此处仅提供一种方法作为参考~~
 （由于libv8的支持问题，不建议使用）。  
 
-1. ~~使用[RubyInstaller](https://rubyinstaller.org/downloads/)安装Ruby~~~
+1. ~~使用[RubyInstaller](https://rubyinstaller.org/downloads/)安装Ruby~~
 2. ~~命令行（或powershell）执行`gem install jekyll bundler`安装Jekyll和Bundler。~~
-3. ~~在命令行中切换到网站根目录（比如`cd C:\xxx\liu_lab`），执行`bundle install`。  ~~
+3. ~~在命令行中切换到网站根目录（比如`cd C:\xxx\liu_lab`），执行`bundle install`。 ~~
 
 对于win10系统，推荐使用Windows Subsystem for Linux（WSL）进行环境配置，过程请参考[Installation via Bash on Windows 10](https://jekyllrb.com/docs/installation/windows/#installation-via-bash-on-windows-10)，最后在网站根目录执行"bundle install"。  
 
