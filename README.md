@@ -8,7 +8,8 @@ This README.md is composed in Chinese for it's mainly a tutorial for Chinese use
 The framework is highly inspired by [Riggleman Lab](http://rrgroup.seas.upenn.edu) and [Bedford Lab](http://bedford.io/), thank you for kindly making your code open-source.
 
 ## 1. 环境配置
-~~请参考[Jekyll on Windows](https://jekyllrb.com/docs/windows/)在windows环境下安装ruby。此处仅提供一种方法作为参考~~（由于libv8的支持问题，不建议使用）。  
+~~请参考[Jekyll on Windows](https://jekyllrb.com/docs/windows/)在windows环境下安装ruby。此处仅提供一种方法作为参考~~
+（由于libv8的支持问题，不建议使用）。  
 
 ~~1. 使用[RubyInstaller](https://rubyinstaller.org/downloads/)安装Ruby~~~
 ~~2. 命令行（或powershell）执行`gem install jekyll bundler`安装Jekyll和Bundler。~~
