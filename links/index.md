@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 刘晓庆课题组-网站链接
+title: 网站链接
 categories:
  - links
 ---
